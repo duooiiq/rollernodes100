@@ -1,101 +1,220 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
+
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rollerbuddy</title>
+
+    <title>RollerNodes24</title>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <link rel="stylesheet" href="./css/style.css">
+
 </head>
 
+
+
 <body onload="calculateGoalPower(), blockAmount()">
+
     <div class="jumbotron jumbotron-fluid">
+
         <div class="row no-gutters">
+
             <div class="col-lg-2 col-4">
+
                 <img class="img-fluid header-margin" src="./img/hamsterpirate.png" id="hamsterpirate" alt="">
+
             </div>
+
             <div class="col-lg-10 col-8 header-margin">
+
                 <!-- <div class="container"> -->
-                <h1>Rollerbuddy</h1>
-                <p>Your personal Rollercoin calculator</p>
+
+                <h1>RollerNodes24</h1>
+
+                <p>Tu calculadora personal para RollerCoin y Otros Tips para ser mejor Jugador</p></p>
+
                 <!-- </div> -->
+
             </div>
+
         </div>
+
     </div>
+
+
 
     <div class="edger row no-gutters">
+
         <div class="col-md-6 no-gutters inputWrapper">
+
             <!-- Network power input and select -->
+
             <div class="inputlabel">
-                <label class="spacing" for="network-power">Enter Network Power For Desired Coin</label>
+
+                <label class="spacing" for="network-power">Ingresa el poder de la red para tu moneda seleccionada</label>
+
                 <br class="spacerInput">
+
                 <input class="inputCalc" type="number" step="any" id="network-power" oninput="calculateGoalPower()">
+
                 <select name="network-power-prefix" id="network-power-selector" onchange="calculateGoalPower()">
+
                     <option value="ghs">GH/s</option>
+
                     <option value="ths">TH/s</option>
+
                     <option value="phs">PH/s</option>
+
                     <option selected value="ehs">EH/s</option>
+
                 </select>
+
             </div>
+
             <!-- Goal power input and select -->
+
             <div class="inputlabel">
-                <label for="goal-power" class="spacing">Enter Your Desired Goal Power</label>
+
+                <label for="goal-power" class="spacing">Ingresa cuanto poder de minado tienes</label>
+
                 <br class="spacerInput">
+
                 <input class="inputCalc" type="number" name="goal-power-hash" id="goal-power"
+
                     oninput="calculateGoalPower()">
+
                 <select name="goal-power-prefix" id="goal-power-selector" onchange="calculateGoalPower()">
+
                     <option value="ghs">GH/s</option>
+
                     <option selected value="ths">TH/s</option>
+
                     <option value="phs">PH/s</option>
+
                     <option value="ehs">EH/s</option>
+
                 </select>
+
             </div>
+
             <!-- Block type input and select -->
+
             <div class="inputlabel">
-                <label for="block-reward" class="spacing">Enter Block Reward For Desired Coin</label>
+
+                <label for="block-reward" class="spacing">Ingresa la recompensa de bloque de tu moneda</label>
+
                 <br class="spacerInput">
+
                 <input class="inputCalc inputBlock" type="number" name="block-reward" id="block-reward"
+
                     oninput="calculateGoalPower()">
+
                 <select name="block-type" id="block-type" onchange="blockAmount(), calculateGoalPower()">
+
                     <option value="BTC">Bitcoin (BTC)</option>
-                    <option value="DOGE">Doge (DOGE)</option>
-                    <option value="ETH">Etherium (ETH)</option>
+
+                    <option value="DOGE">DOGECOIN (DOGE)</option>
+
+                    <option value="ETH">Ethereum (ETH)</option>
+
                     <option value="RLT">RollerToken (RLT)</option>
+
                 </select>
+
             </div>
+
             <button id="calcbtn" style="margin-top: 10px;" class="spacing" onclick="calculateGoalPower()">Calculate</button>
+
         </div>
+
+
 
         <div class="spacing col-md-6">
-            <span>Expected Reward: <span id="exp_reward"></span></span>
+
+           <iframe data-aa="1666104" src="//ad.a-ads.com/1666104?size=728x90" scrolling="no" style="width:728px; height:90px; border:0px; padding:0; overflow:hidden" allowtransparency="true"></iframe>
+
+            <span>Recompensa esperada: <span id="exp_reward"></span></span>
+
             <br>
-            <span>Daily Reward: <span id="daily"></span></span>
+
+            <span>Recompensa Diaria: <span id="daily"></span></span>
+
             <br>
-            <span>Weekly Reward: <span id="weekly"></span></span>
+
+            <span>Recompensa Semanal: <span id="weekly"></span></span>
+
             <br>
-            <span>Monthly Reward: <span id="monthly"></span></span>
+
+            <span>Recompensa Mensual: <span id="monthly"></span></span>
+
         </div>
+
+        
+
         <footer class="page-footer spacing font-small gray">
+
             <div class="text-center">
-                <p>Rollerbuddy isn't endorsed by Rollercoin and does not reflect the views or opinions of anyone
-                    officially
-                    involved in producing and managing Rollercoin and their service(s).</p>
+
+                <p>RollerNodes24 no esta asociado a RollerCoin esta calculara fue hecha por duuioQ en GitHub si puedes donarme haslo porfavor aqui te dejo mi direccio  Smart Chain 0x2A000aE0b0aAebE35A691ba52541D37ebaBd040a gracias por tu donacion :)</p>
+
+    <h1>Tips y Consejos</h1>
+
+    <h2>Como Obtener Mejores resultados</h2>   
+
+     <p>Hola aqui mi guia bueno mi primer consejo se basa en los mineros primero tu potencia de minado se basa en juegos pero estos no duran toda la vida solo duran 24 horas o mas depende cuanto hayas avanzado el primer minero que te recomiendo es el Chupacabras de ahi el Monstruo solo ocupa esos mineros y tambien cuando salgan eventos</p> 
+
+     <h2>Precios de los mineros y sus rentabilidades (los actualizo cada fin de semana)</h2>
+
+     <p>Bueno aqui te dejo algunos mineros:</p>
+
+     <img src=https://rollercoin.com/static/img/market/miners/5f9ae5284ac419fdd08d0584.gif?v=1.0.0,<p>Este es el Chupacabras cuesta 17 RLT da 14 Th/s y este es el primer minero que yo te recomiendo</p>
+
+     <h2>Adios pronto agregare mas informacion apoyame para poder seguir haciendo contenido</h2>
+
             </div>
+
         </footer>
+
     </div>
 
+
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+
     </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+
     </script>
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+
     </script>
+
     <script src="./js/js.js"></script>
+
 </body>
 
+
+
 </html>
+
+
+
+
+
