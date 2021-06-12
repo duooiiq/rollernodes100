@@ -1,3 +1,3 @@
-# Rollerbuddy
+# RollerNodes24
 
-Check your expected earnings
+Obten informacin de tus ganancias de RollerCoin
